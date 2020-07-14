@@ -15,3 +15,5 @@ I’m SI aka Poman
 ## What is the purpose of this blog?
 
 I don’t know, what is the purpose of my life btw?
+
+Mình thích tìm hiểu những điều mới lạ và càng thích chia sẻ chúng lại. Nó giúp mình có cái nhìn sâu hơn về sự việc mình tìm kiếm. Bằng một cách nào đó, thông qua những bài viết của mình, mình mong rằng chúng có thể làm bạn hứng thú.
