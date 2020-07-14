@@ -6,7 +6,7 @@ subtitle: Hello world =))
 
 Welcome to my blog.
 
-I’m SI
+I’m SI aka Poman
 
 - I’m studing at HCM University of Information Technology
 
