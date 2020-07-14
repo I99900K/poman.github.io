@@ -10,7 +10,7 @@ I’m SI aka Poman
 
 - I’m studing at HCM University of Information Technology
 
-- I’m addicted to competitive programming
+- I love technology, programming and reading. Sometimes, I write blog to share what I learnt.
 
 ## What is the purpose of this blog?
 
