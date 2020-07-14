@@ -14,9 +14,9 @@ author: Trương Văn Sỹ
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    #- Beautiful Jekyll: "https://beautifuljekyll.com"
+    #- Learn markdown: "https://www.markdowntutorial.com/"
+  Author's home: "https://i99900k.github.io/poman.github.io/"
 
 # --- Logo --- #
 
