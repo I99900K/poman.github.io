@@ -5,7 +5,7 @@ subtitle: (Phần 1)
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
-tags: [books, test]
+tags: [tutorial, AI]
 ---
 
 Mình là một người thích những công nghệ mới mà khoa học máy tính mang lại, Deep Learning là một định hướng của mình hiện tại. Nhiều người nói rằng nó khó, khô khan, rất nặng về các kiến thức toán học. Đúng là nó khó thật nhưng mình vẫn đang sống và làm việc với nó mỗi ngày bởi đó chính là niềm đam mê của mình. Các bạn hãy cùng mình tìm hiểu về Deep Learning nhé.
