@@ -12,7 +12,7 @@ Mình là một người thích những công nghệ mới mà khoa học máy t
 
 AI - Artificial Intelligence (Trí Tuệ Nhân Tạo), và cụ thể hơn là Machine Learning/Deep Learning (Máy Học/Học sâu) nổi lên một cách nhanh chóng, chúng được nhiều người quan tâm và tìm hiểu. Nó được ứng dụng trong kinh tế, giáo dục, y khoa cho đến những công việc nhà, giải trí hay thậm chí là trong quân sự. Deep learning đang ngày càng cho thấy một tương lai đầy hứa hẹn.
 
-### Deep Learning là gì?
+### 1. Deep Learning là gì?
 Theo wikipedia:
 
 Deep learning được bắt nguồn từ thuật toán Neural network vốn xuất phát chỉ là một ngành nhỏ của machine learning. Deep Learning là một chi của ngành máy học dựa trên một tập hợp các thuật toán để cố gắng mô hình dữ liệu trừu tượng hóa ở mức cao bằng cách sử dụng nhiều lớp xử lý với cấu trúc phức tạp, hoặc bằng cách khác bao gồm nhiều biến đổi phi tuyến.
@@ -34,7 +34,7 @@ K-Nearest Neighbors
 Principal component analysis (PCA)
 Neural network
 
-### Vậy Deep Learning hoạt động ra sao ?
+### 2. Vậy Deep Learning hoạt động ra sao ?
 Deep Learning là một phương pháp của Học máy. Nó cho phép chúng ta huấn luyện một AI có thể dự đoán được các đầu ra dựa vào một tập các đầu vào. Cả hai phương pháp có giám sát và không giám sát đều có thể sử dụng để huấn luyện.
 
 Machine Learning là quá trình dạy máy tính thực hiện một nhiệm vụ, thay vì lập trình nó làm thế nào để thực hiện nhiệm vụ đó từng bước một.
@@ -49,7 +49,7 @@ Chẳng hạn nếu muốn dạy xe hơi cách băng qua đường, theo cách t
 
 
 
-### Khi nào thì bạn nên sử dụng Deep Learning
+### 3. Khi nào thì bạn nên sử dụng Deep Learning
 Khi dữ liệu của bạn phần lớn không có cấu trúc và bạn có rất nhiều dữ liệu.
 
 Các thuật toán Deep Learning có thể lấy dữ liệu lộn xộn và không có nhãn rộng rãi – chẳng hạn như video, hình ảnh, bản ghi âm thanh và văn bản – và áp đặt đủ thứ tự cho dữ liệu đó để đưa ra dự đoán hữu ích, xây dựng hệ thống phân cấp các tính năng tạo nên con chó hoặc con mèo một hình ảnh hoặc âm thanh tạo thành một từ trong lời nói.
@@ -63,7 +63,7 @@ Trợ lý ảo Siri/Alexa,...
 Mô phỏng và nhận diện hình ảnh: Một trong những ứng dụng của chúng ở mảng này mà ta bắt gặp nhiều nhất là Facebook, nó có thể tự động gắn thẻ chính bạn và bạn bè của bạn.
 
 
-### Lộ trình học Deep Learning cho người mới bắt đầu:
+### 4. Lộ trình học Deep Learning cho người mới bắt đầu:
 Yêu cầu cơ bản cho người muốn học về Deep Learning
 
 Kiến thức về toán: đại số tuyến tính, giải tích, xác suất thống kê, lý thuyết đồ thị
