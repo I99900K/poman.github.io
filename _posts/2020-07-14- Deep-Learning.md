@@ -4,7 +4,7 @@ title: Học Sâu Về Deep Learning - Khó Hay Dễ
 subtitle: (Phần 1)
 cover-img: /assets/img/115d1ec4-32fd-4516-812d-8f77508ac9b4.jpeg
 thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
+share-img: /assets/img/115d1ec4-32fd-4516-812d-8f77508ac9b4.jpeg
 tags: [tutorial, AI]
 ---
 
