@@ -294,7 +294,7 @@ int reverse(int n){
 ### Problem 4.09
 ```python
     404
-ERROR
+   ERROR
 ```
 ### Problem 4.10
 ```
