@@ -371,7 +371,5 @@ int main(){
     return 0;
 }
 ```
-###
-###
-###
-Credit: Trương Văn Sỹ
+
+### Credit: Trương Văn Sỹ
