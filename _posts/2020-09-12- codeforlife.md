@@ -120,17 +120,11 @@ double Sum3(int x, int n){
 ```
 ### Problem 3.07
 ```
-
-float sopi(int n){
-    float t,m;
-    float s=0;
     for(int i=0; i<=n; i++){
         t=pow(-1,i);
         m=(2*i)+1;
         s=s+(4*(t/m));
     }
-    return s;
-}
 
 ```
 ### Problem 3.08
@@ -210,7 +204,6 @@ else s=-1;
 ```
 ### Problem 4.02
 ```
-#include<math.h>
 long sum_all_square(int n){
     int s=0;
     for(int i=1; i<=n; i++){
@@ -299,9 +292,6 @@ int reverse(int n){
 ### Problem 4.10
 ```
 
-int main(){
-    int n;
-    cin>>n;
     long s=1;
     for(int i=1; i<=n; i++){
         if(n%2==0){
