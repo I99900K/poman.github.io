@@ -314,6 +314,22 @@ int main(){
     return 0;
 }
 ```
+### OP
+```c#
+while(i <= sqrt(m))
+    {
+        if(m%i==0) {
+            //cout<<i<<" ";
+            if(ktr(i)==1 && n%i==0) s1=s1+i;
+            if (i != (m / i)) {
+                    int a=m/i;
+                //cout<<a<<" ";
+                if(ktr(a)==1 && n%a==0) s2=s2+a; //cout<<s2<<" ";
+            }
+        }
 
+        i++;
+    }
+```
 ### Credit: Trương Văn Sỹ
 ### Contact:[FB](https://fb.com.vn/hvcsndhn)
