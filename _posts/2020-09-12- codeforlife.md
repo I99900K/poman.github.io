@@ -271,7 +271,8 @@ long sum_all_square(int n){
 }
 ```
 ### Problem 4.03
-```using namespace std;
+```
+using namespace std;
 int input(){
     int x;
     cin>>x;
