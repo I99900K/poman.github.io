@@ -9,7 +9,7 @@ tags: [tutorial]
 ---
 
 ### Problem 3.01
-``` 
+```c++
 #include<iostream>
 using namespace std;
 int fibo(int x){
