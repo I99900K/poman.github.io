@@ -96,16 +96,3 @@ var BeautifulJekyllJS = {
 
 // 2fc73a3a967e97599c9763d05e564189
 
-document.addEventListener('DOMContentLoaded', BeautifulJekyllJS.init);
-
-<script type="text/JavaScript"> 
-window.oncontextmenu =function(event){ event.preventDefault(); event.stopPropagation(); return false; }; 
-var msg="dembuon.vn"; 
-function disableIE() {if (document.all) {alert(msg);return false;} } 
-function disableNS(e) { if (document.layers||(document.getElementById&amp;&amp;!document.all)) { 
-if (e.which==2||e.which==3) {alert(msg);return false;} } } 
-if (document.layers) { 
-document.captureEvents(Event.MOUSEDOWN);document.onmousedown=disableNS; } 
-else { document.onmouseup=disableNS;document.oncontextmenu=disableIE; } 
-document.oncontextmenu=new Function("alert(msg);return false") 
-</script>
