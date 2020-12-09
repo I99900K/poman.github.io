@@ -194,11 +194,7 @@ int main()
 ```
 ### Problem 4.01
 ```
-int Input(){
-    int a;
-    cin>>a;
-    return a;
-}
+
 long sum_even_divisor(int n){
     long s=0;
     if(n!=0){
@@ -229,15 +225,7 @@ long sum_all_square(int n){
 ### Problem 4.03
 ```
 
-int input(){
-    int x;
-    cin>>x;
-    return x;
-}
-int input(int &b){
-    cin>>b;
-    return b;
-}
+
 long TongUocChung(int a, int b){
     int s=0;
     int m=min(a,b);
