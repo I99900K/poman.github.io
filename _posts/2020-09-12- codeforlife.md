@@ -10,8 +10,7 @@ tags: [tutorial]
 
 ### Problem 3.01
 ```c++
-#include<iostream>
-using namespace std;
+
 int fibo(int x){
 int f0 = 0;
     int f1 = 1;
@@ -30,19 +29,11 @@ int f0 = 0;
     }
     return fn;
 }
-int main(){
-    int n;
-    cin>>n;
-    if(n<=0||n>30)
-    cout<<"So "<<n<<" khong nam trong khoang [1,30].";
-    else cout<<fibo(n);
-    return 0;
-}
+
 ```
 ### Problem 3.04
 ```
-#include<bits/stdc++.h>
-using namespace std;
+
 int main(){
     int a,b,n,s1=0;
     cin>>a>>b>>n;
@@ -56,25 +47,7 @@ int main(){
 ```
 ### Problem 3.05
 ```
-#include <iostream>
-#include <math.h>
-using namespace std;
-double s1(double n);
-double s2(double n);
-double s3(double n);
-int main()
-{
-    int n;
-    cin>>n;
-    if(n>=1)
-    {
-        cout<<s1(n)<<endl;
-        cout<<s2(n)<<endl;
-        cout<<s3(n);
-    }
-    else{cout<<"sai";}
-    return 0;
-}
+
 double s1(double n)
 {
     double s=0;
@@ -109,8 +82,7 @@ double s3(double n)
 ```
 ### Problem 3.06
 ```
-#include<bits/stdc++.h>
-using namespace std;
+
 long long Sum1(int x, int n)
 {
     long long s=1,t=1;
@@ -144,20 +116,11 @@ double Sum3(int x, int n){
     }
     return s;
 }
-int main()
-{
-    int x,n;
-    cin>>n>>x;
-    cout<<Sum1(x,n)<<endl;
-    cout<<Sum2(x,n)<<endl;
-    cout<<Sum3(x,n)<<endl;
-    return 0;
-}
+
 ```
 ### Problem 3.07
 ```
-#include<bits/stdc++.h>
-using namespace std;
+
 float sopi(int n){
     float t,m;
     float s=0;
@@ -168,18 +131,11 @@ float sopi(int n){
     }
     return s;
 }
-int main(){
-    int n;
-    cin>>n;
-    cout<<sopi(n);
-    return 0;
-}
+
 ```
 ### Problem 3.08
 ```
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
+
     int n,t,s=0;
     cin>>n;
     while(n!=0){
@@ -272,7 +228,7 @@ long sum_all_square(int n){
 ```
 ### Problem 4.03
 ```
-using namespace std;
+
 int input(){
     int x;
     cin>>x;
@@ -322,8 +278,7 @@ long sum_common_prime(int a, int b){
 ```
 ### Problem 4.07
 ```
-#include<bits/stdc++.h>    
- using namespace std;
+
 double calculate(int n){
     double s=sqrt(1.0);
     for(int i=2; i<=n; i++){
@@ -336,7 +291,7 @@ double calculate(int n){
 ### Problem 4.08
 ```
 ×
-using namespace std;
+
 int reverse(int n){
     int tmp;
     int res=0;
@@ -355,8 +310,7 @@ No input file
 ```
 ### Problem 4.10
 ```
-#include<bits/stdc++.h>
-using namespace std;
+
 int main(){
     int n;
     cin>>n;
