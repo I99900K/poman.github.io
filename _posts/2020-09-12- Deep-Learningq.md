@@ -1,83 +1,376 @@
 ---
 layout: post
-title: Học Sâu Về Deep Learning - Khó Hay Dễ 
-subtitle: (Phần 1)
-cover-img: /assets/img/115d1ec4-32fd-4516-812d-8f77508ac9b4.jpeg
-thumbnail-img: /assets/img/115d1ec4-32fd-4516-812d-8f77508ac9b4.jpeg
-share-img: /assets/img/115d1ec4-32fd-4516-812d-8f77508ac9b4.jpeg
-tags: [tutorial, AI]
+title: Computer Science 
+subtitle: (Problem Solving 3)
+//cover-img: /assets/img/115d1ec4-32fd-4516-812d-8f77508ac9b4.jpeg
+//thumbnail-img: /assets/img/115d1ec4-32fd-4516-812d-8f77508ac9b4.jpeg
+//share-img: /assets/img/115d1ec4-32fd-4516-812d-8f77508ac9b4.jpeg
+tags: [tutorial]
 ---
 
-Mình là một người thích những công nghệ mới mà khoa học máy tính mang lại, Deep Learning là một định hướng của mình hiện tại. Nhiều người nói rằng nó khó, khô khan, rất nặng về các kiến thức toán học. Đúng là nó khó thật nhưng mình vẫn đang sống và làm việc với nó mỗi ngày bởi đó chính là niềm đam mê của mình. Các bạn hãy cùng mình tìm hiểu về Deep Learning nhé.
+### Problem 3.01
+``` 
+#include<iostream>
+using namespace std;
+int fibo(int x){
+int f0 = 0;
+    int f1 = 1;
+    int fn = 1;
+    int i;
 
-AI - Artificial Intelligence (Trí Tuệ Nhân Tạo), và cụ thể hơn là Machine Learning/Deep Learning (Máy Học/Học sâu) nổi lên một cách nhanh chóng, chúng được nhiều người quan tâm và tìm hiểu. Nó được ứng dụng trong kinh tế, giáo dục, y khoa cho đến những công việc nhà, giải trí hay thậm chí là trong quân sự. Deep learning đang ngày càng cho thấy một tương lai đầy hứa hẹn.
+    if (x<=0||x>30) {
+    } else if (x == 0 || x == 1) {
+        return x;
+    } else {
+        for (i = 2; i < x; i++) {
+            f0 = f1;
+            f1 = fn;
+            fn = f0 + f1;
+        }
+    }
+    return fn;
+}
+int main(){
+    int n;
+    cin>>n;
+    if(n<=0||n>30)
+    cout<<"So "<<n<<" khong nam trong khoang [1,30].";
+    else cout<<fibo(n);
+    return 0;
+}
+```
+### Problem 3.04
+```
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int a,b,n,s1=0;
+    cin>>a>>b>>n;
+    while(n!=0){
+    s1+=a*b;
+    a++;
+    b++;
+    n--;}
+    cout<<s1;
+}
+```
+### Problem 3.05
+```
+#include <iostream>
+#include <math.h>
+using namespace std;
+double s1(double n);
+double s2(double n);
+double s3(double n);
+int main()
+{
+    int n;
+    cin>>n;
+    if(n>=1)
+    {
+        cout<<s1(n)<<endl;
+        cout<<s2(n)<<endl;
+        cout<<s3(n);
+    }
+    else{cout<<"sai";}
+    return 0;
+}
+double s1(double n)
+{
+    double s=0;
+    for(int i=1; i<=n; i++)
+    {
+        s=s+(double)pow(i,i);
+    }
+    return s;
+}
+double s2(double n)
+{
+    double t=1;
+    double s=0;
+    for(int i=1; i<=n; i++)
+    {
+        t=t*i;
+        s=s+t;
+    }
+    return s;
+}
+double s3(double n)
+{
+    double s=0;
+    double t=0;
+    for(int i=1; i<=n; i++)
+    {
+        t=t+i;
+        s=s+1/t;
+    }
+    return s;
+}
+```
+### Problem 3.06
+```
+#include<bits/stdc++.h>
+using namespace std;
+long long Sum1(int x, int n)
+{
+    long long s=1,t=1;
+    for(int i=1; i<=n; i++)
+    {
+        t=t*x;
+        s=s+t;
+    }
+    return s;
+}
+float Sum2(int x, int n)
+{
+    //1+x^2+x^4 ++x^2n
+    float s=1,t=1;
+    for(int i=1; i<=n; i++)
+    {
+        t=t*x*x;
+        s=s+t;
+    }
+    return s;
+}
+double Sum3(int x, int n){
+    double s=1,t=1,m=1;
+    int i=1;
+    while(i<=n)
+    {
+        t=t*x;
+        m=m*i;
+        s=s+t/m;
+        i++;
+    }
+    return s;
+}
+int main()
+{
+    int x,n;
+    cin>>n>>x;
+    cout<<Sum1(x,n)<<endl;
+    cout<<Sum2(x,n)<<endl;
+    cout<<Sum3(x,n)<<endl;
+    return 0;
+}
+```
+### Problem 3.07
+```
+#include<bits/stdc++.h>
+using namespace std;
+float sopi(int n){
+    float t,m;
+    float s=0;
+    for(int i=0; i<=n; i++){
+        t=pow(-1,i);
+        m=(2*i)+1;
+        s=s+(4*(t/m));
+    }
+    return s;
+}
+int main(){
+    int n;
+    cin>>n;
+    cout<<sopi(n);
+    return 0;
+}
+```
+### Problem 3.08
+```
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n,t,s=0;
+    cin>>n;
+    while(n!=0){
+        t=n%10;
+        s+=t;
+        n/=10;
+    }
+    cout<<s;
+    return 0;
+}
+```
+### Problem 3.10
+```
+#include <bits/stdc++.h>
+#define MAX 1000
+using namespace std;
+int main()
+{
+  int a[MAX];
+  int idx = 0;
+  int n,d=0;
+  cin>>n;
+  for (int i = 1; i < n; ++i)
+  {
+    int val = i/2;
+    bool no_div = true;
+    for (int j = 2; j <= val; ++j)
+    {
+      if (i%j == 0)
+      {
+        no_div = false;
+        break;
+      }
+    }
 
-### 1. Deep Learning là gì?
-Theo wikipedia:
+    if (no_div == true)
+    {
+      a[idx] = i;
+      idx++;
+    }
+  }
+  for (int t = 0; t < idx-1; t++)
+  {
+    int n1 = a[t];
+    int n2 = a[t+1];
+    if ((n2-n1) == 2)
+    {
+      cout << n1 << ", " << n2;
+      cout << "\n";
+      d++;
+    }
+  }
+  cout<<"Tong: "<<d<<" cap so sinh doi < "<<n;
+  return 0;
+}
+```
+### Problem 4.01
+```
+int Input(){
+    int a;
+    cin>>a;
+    return a;
+}
+long sum_even_divisor(int n){
+    long s=0;
+    if(n!=0){
+    for(int i=2; i<=n; i=i+2){
+        if(n%i==0){
+            s+=i;
+    }}
+    if(s==0) s=-1;
+}
+else s=-1;
+  return s;
+}
+```
+### Problem 4.02
+```
+#include<math.h>
+long sum_all_square(int n){
+    int s=0;
+    for(int i=1; i<=n; i++){
+            int d=sqrt(i);
+        if(n%i==0 && d*d==i){
+            s=s+i;
+        }
+    }
+    return s;
+}
+```
+### Problem 4.03
+```using namespace std;
+int input(){
+    int x;
+    cin>>x;
+    return x;
+}
+int input(int &b){
+    cin>>b;
+    return b;
+}
+long TongUocChung(int a, int b){
+    int s=0;
+    int m=min(a,b);
+    for(int i=1; i<=m; i++){
+        if(a%i==0 && b%i==0){
+            s=s+i;
+        }
+    }
+    return s;
+}
 
-Deep learning được bắt nguồn từ thuật toán Neural network vốn xuất phát chỉ là một ngành nhỏ của machine learning. Deep Learning là một chi của ngành máy học dựa trên một tập hợp các thuật toán để cố gắng mô hình dữ liệu trừu tượng hóa ở mức cao bằng cách sử dụng nhiều lớp xử lý với cấu trúc phức tạp, hoặc bằng cách khác bao gồm nhiều biến đổi phi tuyến.
+```
+### Problem 4.04
+```
+bool ktr(int n)
+{
+    if (n <= 1)  return false;
+    if (n <= 3)  return true;
+    if (n%2 == 0 || n%3 == 0) return false;
 
-Deep Learning đã giúp máy tính thực thi những việc tưởng chừng như không thể vào 15 năm trước: phân loại cả ngàn vật thể khác nhau trong các bức ảnh, tự tạo chú thích cho ảnh, bắt chước giọng nói và chữ viết của con người, giao tiếp với con người, hay thậm chí cả sáng tác văn, phim, ảnh, âm nhạc.
+    for (int i=5; i*i<=n; i=i+6)
+        if (n%i == 0 || n%(i+2) == 0)
+           return false;
 
-
-
-Ví dụ 1: Tại sao bạn biết một bức ảnh là ảnh con mèo hay ảnh con chó? Đối với bạn, việc định nghĩa điều này vô cùng đơn giản (Ví dụ: Tai mèo nhọn, mỏ chó thì dài ra, …), tuy nhiên, bạn lại rất khó khăn để biểu diễn những thứ này dưới các dòng lệnh của máy tính. Nhưng nhờ vào Deep Learning thì vấn đề đó được giải quyết một cách cụ thể.
-
-Deep learning là một phần của Machine Learning, một ngành rất rộng và nặng về toán, gồm rất nhiều thuật toán và mỗi thuật toán có ứng dụng riêng tùy vào bài toán:
-
- Linear Regression
-Logistic Regresstion
-Decision Tree and Random Forest
-Naive Bayes
-Support Vector Machines
-K-Nearest Neighbors
-Principal component analysis (PCA)
-Neural network
-
-### 2. Vậy Deep Learning hoạt động ra sao ?
-Deep Learning là một phương pháp của Học máy. Nó cho phép chúng ta huấn luyện một AI có thể dự đoán được các đầu ra dựa vào một tập các đầu vào. Cả hai phương pháp có giám sát và không giám sát đều có thể sử dụng để huấn luyện.
-
-Machine Learning là quá trình dạy máy tính thực hiện một nhiệm vụ, thay vì lập trình nó làm thế nào để thực hiện nhiệm vụ đó từng bước một.
-
-Khi kết thúc đào tạo, một hệ thống Machine Learning sẽ có thể đưa ra dự đoán chính xác khi được cung cấp dữ liệu.
-
-Như ở ví dụ 1 mình đã nêu ở trên thì chúng ta hoàn toàn có thể giải quyết chúng nhờ vào Deep Learning. Để dạy máy tính nhận diện hình ảnh một con mèo thì chúng ta sẽ lập trình ra nhiều lớp trong mạng thần kinh nhân tạo, mỗi lớp có khả năng xác định một đặc điểm cụ thể của con mèo như râu, vuốt, chân,… rồi cho máy xem hàng ngàn bức ảnh mèo (chỉ ra rằng “Đây là con mèo”) cùng hàng ngàn bức ảnh không phải mèo (chỉ ra rằng "đây không phải mèo"). 
-
-Ví dụ 2: Chúng ta muốn dạy xe tự động cách qua đường và xử lí các tình huống khi tham gia giao thông.
-
-Chẳng hạn nếu muốn dạy xe hơi cách băng qua đường, theo cách truyền thống bạn sẽ đưa cho nó một loạt quy tắc hướng dẫn cách nhìn trái phải hay đợi xe và người đi qua,… Thế nhưng nếu trong Machine Learning nói chung và Deep Learning nói riêng, bạn sẽ cho máy tính xem 10.000 video quay cảnh người ta băng qua đường an toàn và 10.000 video quay cảnh ai đó bị xe đâm để nó tự học theo.
-
-
-
-### 3. Khi nào thì bạn nên sử dụng Deep Learning
-Khi dữ liệu của bạn phần lớn không có cấu trúc và bạn có rất nhiều dữ liệu.
-
-Các thuật toán Deep Learning có thể lấy dữ liệu lộn xộn và không có nhãn rộng rãi – chẳng hạn như video, hình ảnh, bản ghi âm thanh và văn bản – và áp đặt đủ thứ tự cho dữ liệu đó để đưa ra dự đoán hữu ích, xây dựng hệ thống phân cấp các tính năng tạo nên con chó hoặc con mèo một hình ảnh hoặc âm thanh tạo thành một từ trong lời nói.
-
-Deep Learning ngày càng được nhiều người biết đến và nó những bước đột phá vô cùng to lớn. Những đột phá to lớn này là việc thiết kế ra những trợ lý ảo bằng giọng nói, các hệ thống xe tự lái hay sử dụng vào thiết kế đồ họa, phân tích tình hình giao thông của thành phố, cho đến phát triển các nguyên liệu mới giúp robot thấu hiểu thế giới xung quanh hơn. Xu hướng về Robot và Deep Learning đang được nhiều công ty công nghệ lớn chú trọng đầu tư và phát triển.
-
-Việc Deep Learning phát triển tạo nên sự chủ động trong mọi việc, con người dần có thể điều khiển cuộc sống của mình. Cùng điểm qua các hình thức mà việc học sâu mang lại.
-
-Ứng dụng xe tự động
-Trợ lý ảo Siri/Alexa,...
-Mô phỏng và nhận diện hình ảnh: Một trong những ứng dụng của chúng ở mảng này mà ta bắt gặp nhiều nhất là Facebook, nó có thể tự động gắn thẻ chính bạn và bạn bè của bạn.
-
-
-### 4. Lộ trình học Deep Learning cho người mới bắt đầu:
-Yêu cầu cơ bản cho người muốn học về Deep Learning
-
-Kiến thức về toán: đại số tuyến tính, giải tích, xác suất thống kê, lý thuyết đồ thị
-Kiến thức về lập trình: Hàm, vòng lặp.
-Cập nhật những kiến thức mới liên tục.
-Sau đây là lộ trình mà mình đang hướng tới:
-
-Python cơ bản: Cách dùng array, matrix, numpy trong python
-Các bài toán trong Machine Learning và Deep Learning: Linear Regression, SVM, Perceptron Learning, biết được đầu vào, đầu ra. Lúc nào dùng classification? Lúc nào dùng regression?
-Học dùng thư viện sklearn. Mình nghĩ chỉ cần với sklearn thì bạn có thể đã làm được 70-80% các bài toán của ML rồi. Trừ khi data quá lớn thì có thể nghĩ đến DL. Mình suggest thêm 1 nguồn mình thấy khá đầy đủ trên Kaggle: Kaggle
-Học model DL như CNN, RNN, LSTM. Cái này thì nhiều, mình nghĩ bạn có thể tìm đến các khóa của Stanford về Computer Vision hay NLP đều có. Framework thì có thể lựa Tensorflow, Keras (trên nền Tensorflow) hoặc Pytorch đều được.
-Học xử lý data bằng Pandas và analysis bằng Matplot hay Seaborn. 
-Xong rồi thì tìm bài toán hay challenge nào đó làm thử thôi. Quan trọng là học đi đôi với hành. Làm nhiều sẽ quen tay.
-### Tổng kết:
-Deep Learning cực kỳ mạnh mẽ nhưng nó khó, những vấn đề mình nêu trong bài viết này chỉ là phần ngọn mà thôi.
-
-Trên đây là những tổng quan về Deep Learning mà những gì mình học hỏi được. Còn rất nhiều khái niệm, các ứng dụng thực tiễn, các thuật toán chưa được nhắc tới trong bài viết này. Mình không thể trình bày tất cả trong một bài viết. Hi vọng với bài viết ở phần tiếp theo sẽ giúp các bạn phần nào hiểu rõ hơn về Deep Learning thông qua các thuật toán.
+    return true;
+}
+long sum_common_prime(int a, int b){
+    int s=0;
+    int m=min(a,b);
+    if(a!=0 && b!=0){
+            for(int i=1; i<=m; i++){
+                if(ktr(i)==1 && a%i==0 && b%i==0) s=s+i;
+            }
+    }
+    if(s==0) s=-1;
+    return s;
+}
+```
+### Problem 4.07
+```
+#include<bits/stdc++.h>    
+ using namespace std;
+double calculate(int n){
+    double s=sqrt(1.0);
+    for(int i=2; i<=n; i++){
+            float t=i+s;
+        s=sqrt(t);
+    }
+    return s;
+}
+```
+### Problem 4.08
+```
+×
+using namespace std;
+int reverse(int n){
+    int tmp;
+    int res=0;
+    while(n>0){
+        tmp=n%10;
+        res=res*10+tmp;
+        n=n/10;
+    }
+    return res;
+}
+```
+### Problem 4.09
+```
+    404
+No input file
+```
+### Problem 4.10
+```
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    long s=1;
+    for(int i=1; i<=n; i++){
+        if(n%2==0){
+            s=s+(s*i);
+        }
+        else s=s*i;
+        i++;
+    }
+    cout<<s;
+    return 0;
+}
+```
+###
+###
+###
